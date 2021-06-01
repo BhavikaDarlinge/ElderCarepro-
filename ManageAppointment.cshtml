@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "ManageAppointment";
+}
+
+<div class="row">
+    <div class="card col-12">
+        <div class="card-header">
+            <h4 class="card-title">Appointment</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                
+                <div class="col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label class="form-label"> State</label>
+                        <select class="form-control" id="ddlState">
+                            <option value="0">--Select State--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"> Hospital</label>
+                        <select class="form-control" id="ddlHosp">
+                            <option value="0">--Select Hospital--</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-lg-4">
+
+                    <div class="form-group">
+                        <label class="form-label"> City</label>
+                        <select class="form-control" id="ddlCity">
+                            <option value="0">--Select City--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"> Doctor</label>
+                        <select class="form-control" id="ddldoc">
+                            <option value="0">--Select Doctor--</option>
+                        </select>
+                    </div>
+                  
+
+                </div>
+                <div class="col-md-4 col-lg-4">
+
+                    <div class="form-group">
+
+                        Date
+                        <input type="date" name="name" value="" id="dateofapp" class="form-control" />
+
+                    </div>
+
+                    <br />
+                    <br />
+                    <div class="form-group">
+                        <input type="button" name="name" value="Save" id="btnSubmit" class="btn btn-primary" />
+                        <input type="reset" name="name" value="Cancel" id="btnCancel" class="btn btn-warning" />
+                    </div>
+
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="card col-12">
+       
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12">
+                    <table class="table table-hover" id="tblbranchdata">
+                        <thead>
+                            <tr>
+
+                                <th>
+                                    State
+                                </th>
+                                <th>
+                                    City
+                                </th>
+                                <th>
+                                    Hospital
+                                </th>
+                                <th>
+                                    Doctor
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+                            </tr>
+                        </thead>
+                        <thead class="GetAppointment">
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/ElderCarePro/ManageAppointment.js"></script>
+
+<script>
+    ManageAppointment.Init();
+
+</script>
